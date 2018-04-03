@@ -46,10 +46,9 @@ const RootTabNavigator = TabNavigator(
     },
     navigationOptions: {
       tabBarVisible: false,
-      swipeEnabled: true,
-      animationEnabled: true
     },
     lazy: false,
+    swipeEnabled: true
   }
 );
 
