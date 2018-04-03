@@ -1,14 +1,20 @@
+# Visual Studio App Center Sample App for React Native 
+The React Native application in this repository and its corresponding tutorials will help you quickly and easily onboard to Visual Studio App Center.
 
-# Contributing
+## About this repository
+The App Center SDK modules and React Native Code Push are already integrated within the application. Simply follow the tutorials to learn how to use each service.
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+## Tutorials
+First navigate to the **Getting Started** tutorial linked below. After following that tutorial, you can choose which App Center service to explore. 
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
-
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+## Contents
+| Tutorial | Description |
+|:-|:-|
+| [Getting Started](https://docs.microsoft.com/en-us/appcenter/quickstarts/android/getting-started) | Set up the app |
+| [Build](https://docs.microsoft.com/en-us/appcenter/quickstarts/android/build) | Build the app |
+| [Test](https://docs.microsoft.com/en-us/appcenter/quickstarts/android/test) | Run automated UI tests on real devices |
+| [Distribute](https://docs.microsoft.com/en-us/appcenter/quickstarts/android/distribute)| Distribute application to a group of users |
+| [Crashes](https://docs.microsoft.com/en-us/appcenter/quickstarts/android/crashes) | Monitor application crashes |
+| [Analytics](https://docs.microsoft.com/en-us/appcenter/quickstarts/android/analytics) | View user analytics |
+| [Push](https://docs.microsoft.com/en-us/appcenter/quickstarts/android/push) | Send push notifications to your app users |
+| [CodePush](https://docs.microsoft.com/en-us/appcenter/distribution/codepush/) | Deploy mobile app updates directly to their users’ devices |
