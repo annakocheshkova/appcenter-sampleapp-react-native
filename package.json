@@ -4,6 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
+    "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
     "test": "jest"
   },
   "dependencies": {
@@ -22,8 +24,8 @@
   "devDependencies": {
     "@types/jest": "^22.2.2",
     "@types/react-test-renderer": "^16.0.1",
-    "babel-jest": "22.4.3",
-    "babel-preset-react-native": "4.0.0",
+    "babel-jest": "^22.4.3",
+    "babel-preset-react-native": "^4.0.0",
     "jest": "22.4.3",
     "react-native-typescript-transformer": "^1.2.3",
     "react-test-renderer": "^16.3.0-alpha.1",
@@ -31,7 +33,9 @@
     "typescript": "^2.8.1"
   },
   "jest": {
+    "preset": "react-native",
     "transform": {
+      "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.tsx?$": "ts-jest"
     },
     "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
@@ -44,7 +48,12 @@
       "node"
     ],
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native-code-push)"
-    ]
+      "node_modules/(?!(react-[a-z|-]*)/)"
+    ],
+    "globals": {
+      "ts-jest": {
+        "useBabelrc": true
+      }
+    }
   }
 }
