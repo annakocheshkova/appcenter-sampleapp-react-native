@@ -9,7 +9,6 @@ import com.microsoft.appcenter.espresso.Factory;
 import com.microsoft.appcenter.espresso.ReportHelper;
 import com.appcentersample.MainActivity;
 
-import org.junit.After;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.After;
@@ -23,15 +22,10 @@ import static android.support.test.espresso.matcher.ViewMatchers.withTagValue;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.core.AllOf.allOf;
 import android.support.test.runner.AndroidJUnit4;
-import com.microsoft.appcenter.espresso.Factory;
-import com.microsoft.appcenter.espresso.ReportHelper;
 
 @LargeTest
 @RunWith(AndroidJUnit4.class)
 public class AppCenterSampleUITest {
-
-    @Rule
-    public ReportHelper reportHelper = Factory.getReportHelper();
 
     @Rule
     public ActivityTestRule<MainActivity> mActivityTestRule = new ActivityTestRule<>(MainActivity.class);
